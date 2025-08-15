@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 4rem;
+}
+#user-container {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+#reload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reload-btn {
+  background-color: #4caf50;
+  margin-top: 1rem;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#reload-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+#reload-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.user-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 20rem;
+  flex-shrink: 0;
+}
+.user-card h2 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+.user-card p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0;
+}
+@media (max-width: 600px) {
+  .user-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
